@@ -3,8 +3,8 @@ $apiKey = '1aed6075854ebe4421730cff';
 
 $monedesPermeses = ['USD', 'EUR'];
 
-$quant  = $_GET['quant'] ?? '';
-$desti  = strtoupper($_GET['moneda'] ?? '');
+$quant  = $_POST['quant'] ?? '';
+$desti  = strtoupper($_POST['moneda'] ?? '');
 
 if (!is_numeric($quant) || $quant <= 0) {
     die('Error: la quantitat ha de ser un número positiu. <a href="index.php">Tornar</a>');
@@ -36,3 +36,4 @@ echo "<p>" . number_format($quant, 2) . " $origen = "
      . number_format($resultat, 2) . " $desti</p>";
 echo "<p>Canvi aplicat: 1 $origen = $canvi $desti</p>";
 echo '<a href="index.php">Fer una altra conversió</a>';
+?>
