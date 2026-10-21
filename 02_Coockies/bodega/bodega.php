@@ -21,7 +21,7 @@ if (isset($_POST['enviar'])) {
         <p>Idioma:
             <select name="idioma">
                 <option value="ca">Català</option>
-                <option value="es">Español</option>
+                <option value="es">Espanyol</option>
                 <option value="en">English</option>
             </select>
         </p>
